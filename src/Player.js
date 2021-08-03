@@ -181,6 +181,7 @@ class Player extends EventEmitter {
      */
     stateUpdate(state) {
         this.state = state;
+        this.emit('stateUpdate', state);
     }
 
     /**
